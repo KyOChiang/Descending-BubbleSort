@@ -30,6 +30,7 @@ char* GlobalOrderError;
 //=======External Functions This Runner Calls=====
 extern void setUp(void);
 extern void tearDown(void);
+extern void test_smallerVal_should_swap_to_right_within_2_val_only(void);
 
 
 //=======Test Reset Option=====
@@ -45,6 +46,7 @@ int main(void)
 {
   Unity.TestFile = "test_descendingBubbleSort.c";
   UnityBegin();
+  RUN_TEST(test_smallerVal_should_swap_to_right_within_2_val_only, 11);
 
   return (UnityEnd());
 }
