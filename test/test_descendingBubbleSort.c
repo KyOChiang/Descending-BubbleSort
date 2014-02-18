@@ -28,3 +28,10 @@ void test_smallerVal_should_not_swap_if_in_order_for_neg_no(){
 	TEST_ASSERT_EQUAL(-33,intArray[0]);
 	TEST_ASSERT_EQUAL(-99,intArray[1]);
 }
+
+void test_smallerVal_should_swap_if_not_in_order_for_neg_no(){
+	int intArray[] = {-187,-22};
+	takeSmallerAndSwapToRight(&intArray[0],&intArray[1]);
+	TEST_ASSERT_EQUAL(-22,intArray[0]);
+	TEST_ASSERT_EQUAL(-187,intArray[1]);
+}
