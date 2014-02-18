@@ -18,6 +18,7 @@ int main(void){
 	
 	printf("\nHere is you result : \n");
 	printf("---------------------\n");
+	descendingBubbleSort(intArray,size);
 	
 	for(count = 0; count < size; count++){
 		if(count == (size-1)){
