@@ -93,3 +93,35 @@ void test_sortSmallestToRightMost_should_move_largest_to_right_most_for_5element
  UnityAssertEqualNumber((_U_SINT)((-30)), (_U_SINT)((intArray[4])), (((void *)0)), (_U_UINT)48, UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_descendingBubbleSort_should_sort_all_10_elements_in_correct_order(){
+
+ int intArray[] = {-1 ,33, 22, -9, 0, -200, 315, 11, 8, 3};
+
+ descendingBubbleSort(intArray,(sizeof(intArray)/sizeof(int)));
+
+
+
+ UnityAssertEqualNumber((_U_SINT)((315)), (_U_SINT)((intArray[0])), (((void *)0)), (_U_UINT)55, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((33)), (_U_SINT)((intArray[1])), (((void *)0)), (_U_UINT)56, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((22)), (_U_SINT)((intArray[2])), (((void *)0)), (_U_UINT)57, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((11)), (_U_SINT)((intArray[3])), (((void *)0)), (_U_UINT)58, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((8)), (_U_SINT)((intArray[4])), (((void *)0)), (_U_UINT)59, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((intArray[5])), (((void *)0)), (_U_UINT)60, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((0)), (_U_SINT)((intArray[6])), (((void *)0)), (_U_UINT)61, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-1)), (_U_SINT)((intArray[7])), (((void *)0)), (_U_UINT)62, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-9)), (_U_SINT)((intArray[8])), (((void *)0)), (_U_UINT)63, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-200)), (_U_SINT)((intArray[9])), (((void *)0)), (_U_UINT)64, UNITY_DISPLAY_STYLE_INT);
+
+}

@@ -47,3 +47,19 @@ void test_sortSmallestToRightMost_should_move_largest_to_right_most_for_5element
 	TEST_ASSERT_EQUAL(-3,intArray[3]);
 	TEST_ASSERT_EQUAL(-30,intArray[4]);
 }
+
+void test_descendingBubbleSort_should_sort_all_10_elements_in_correct_order(){
+	int intArray[] = {-1 ,33, 22, -9, 0, -200, 315, 11, 8, 3};
+	descendingBubbleSort(intArray,(sizeof(intArray)/sizeof(int)));
+	
+	TEST_ASSERT_EQUAL(315,intArray[0]);
+	TEST_ASSERT_EQUAL(33,intArray[1]);
+	TEST_ASSERT_EQUAL(22,intArray[2]);
+	TEST_ASSERT_EQUAL(11,intArray[3]);
+	TEST_ASSERT_EQUAL(8,intArray[4]);
+	TEST_ASSERT_EQUAL(3,intArray[5]);
+	TEST_ASSERT_EQUAL(0,intArray[6]);
+	TEST_ASSERT_EQUAL(-1,intArray[7]);
+	TEST_ASSERT_EQUAL(-9,intArray[8]);
+	TEST_ASSERT_EQUAL(-200,intArray[9]);
+}

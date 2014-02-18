@@ -17,3 +17,10 @@ void sortSmallestToRightMost(int *array, int size){
 		takeSmallerAndSwapToRight(&array[i],&array[i+1]);
 	}
 }
+
+void descendingBubbleSort(int *array, int size){
+	
+	for(;size >= 1; size--){
+		sortSmallestToRightMost(array,size);
+	}
+}

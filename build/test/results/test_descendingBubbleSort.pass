@@ -18,11 +18,14 @@
 - :test: test_sortSmallestToRightMost_should_move_largest_to_right_most_for_5elements
   :line: 39
   :message: ''
+- :test: test_descendingBubbleSort_should_sort_all_10_elements_in_correct_order
+  :line: 51
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 5
-  :passed: 5
+  :total: 6
+  :passed: 6
   :failed: 0
   :ignored: 0
 :stdout: []

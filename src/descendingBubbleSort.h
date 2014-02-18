@@ -3,5 +3,6 @@
 
 void takeSmallerAndSwapToRight(int *firstVal,int *secondVal);
 void sortSmallestToRightMost(int *array, int size);
+void descendingBubbleSort(int *array, int size);
 
 #endif

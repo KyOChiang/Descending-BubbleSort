@@ -35,6 +35,7 @@ extern void test_smallerVal_should_not_swap_if_in_order(void);
 extern void test_smallerVal_should_not_swap_if_in_order_for_neg_no(void);
 extern void test_smallerVal_should_swap_if_not_in_order_for_neg_no(void);
 extern void test_sortSmallestToRightMost_should_move_largest_to_right_most_for_5elements(void);
+extern void test_descendingBubbleSort_should_sort_all_10_elements_in_correct_order(void);
 
 
 //=======Test Reset Option=====
@@ -55,6 +56,7 @@ int main(void)
   RUN_TEST(test_smallerVal_should_not_swap_if_in_order_for_neg_no, 25);
   RUN_TEST(test_smallerVal_should_swap_if_not_in_order_for_neg_no, 32);
   RUN_TEST(test_sortSmallestToRightMost_should_move_largest_to_right_most_for_5elements, 39);
+  RUN_TEST(test_descendingBubbleSort_should_sort_all_10_elements_in_correct_order, 51);
 
   return (UnityEnd());
 }
