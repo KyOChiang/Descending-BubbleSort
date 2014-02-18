@@ -69,3 +69,27 @@ void test_smallerVal_should_swap_if_not_in_order_for_neg_no(){
  UnityAssertEqualNumber((_U_SINT)((-187)), (_U_SINT)((intArray[1])), (((void *)0)), (_U_UINT)36, UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_sortSmallestToRightMost_should_move_largest_to_right_most_for_5elements(){
+
+
+
+
+
+ int intArray[] = {-30,67,10,2,-3};
+
+ sortSmallestToRightMost(intArray,(sizeof(intArray)/sizeof(int)));
+
+ UnityAssertEqualNumber((_U_SINT)((67)), (_U_SINT)((intArray[0])), (((void *)0)), (_U_UINT)44, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((10)), (_U_SINT)((intArray[1])), (((void *)0)), (_U_UINT)45, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((intArray[2])), (((void *)0)), (_U_UINT)46, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-3)), (_U_SINT)((intArray[3])), (((void *)0)), (_U_UINT)47, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-30)), (_U_SINT)((intArray[4])), (((void *)0)), (_U_UINT)48, UNITY_DISPLAY_STYLE_INT);
+
+}

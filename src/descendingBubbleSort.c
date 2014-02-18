@@ -9,3 +9,11 @@ void takeSmallerAndSwapToRight(int *firstVal,int *secondVal){
 	*firstVal = temp;
 	}
 }
+
+void sortSmallestToRightMost(int *array, int size){
+	
+	int i;
+	for(i=0;i < (size-1);i++){
+		takeSmallerAndSwapToRight(&array[i],&array[i+1]);
+	}
+}
