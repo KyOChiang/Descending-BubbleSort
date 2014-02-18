@@ -32,6 +32,7 @@ extern void setUp(void);
 extern void tearDown(void);
 extern void test_smallerVal_should_swap_to_right_within_2_val_only(void);
 extern void test_smallerVal_should_not_swap_if_in_order(void);
+extern void test_smallerVal_should_not_swap_if_in_order_for_neg_no(void);
 
 
 //=======Test Reset Option=====
@@ -49,6 +50,7 @@ int main(void)
   UnityBegin();
   RUN_TEST(test_smallerVal_should_swap_to_right_within_2_val_only, 11);
   RUN_TEST(test_smallerVal_should_not_swap_if_in_order, 18);
+  RUN_TEST(test_smallerVal_should_not_swap_if_in_order_for_neg_no, 25);
 
   return (UnityEnd());
 }
